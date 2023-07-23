@@ -162,12 +162,6 @@ body{
 	gap: 30px;
 }
 
-/* .content>ul>li{
-	padding: 20px;
-	box-shadow:0 2px 4px #00000029
-} */
-
-
 .content>ul>li{
 	padding: 20px;
 	border-radius: 20px;
@@ -184,17 +178,6 @@ body{
 	inset -18px -18px 30px rgba(255, 255, 255, 1);
 
 }
-
-
-
-
-/* .content>ul>li:hover{
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-	box-shadow: 0 0 0;
-	border-right: 5px solid #00000029;
-	border-bottom: 5px solid #00000029;
-} */
 
 h4{
 	font-size: 20px;
@@ -297,10 +280,6 @@ background-color: #aaaaaa8e;
 	font-size: 16px;
 	line-height: 1.5;
 }
-
-/* .form>form>div input:focus{
-	border: #00aaec;
-} */
 
 .form textarea{
 	width: 350px;
