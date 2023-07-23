@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-family: "Microsoft JhengHei UI";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.headerTop{
+    background-color: #f6f6f6;
+    padding: 4px;
+	display: flex;
+	justify-content: end;
+    list-style-type: none;
+}
+
+.headerTop a{
+    text-decoration: none;
+    display: flex;
+}
+.headerTop a>img{
+    display: block;
+	margin-right: 5px;
+	margin-left:12px
+}
+
+.headerTop li:nth-child(2) a{
+    color: #00aaec;
+	border-left: 1px solid gray;
+	margin-right: 15vw;
+}
+
+.headerTop li:first-of-type a{
+    color: #4460a0;
+	padding-right: 12px;
+}
+
+.headerTop li:hover{
+	text-decoration: underline;
+	text-decoration-color: #4460a0;
+}
+
+.headerTop li:nth-child(2):hover{
+	text-decoration-color: #00aaec;
+}
+
+.headerBottom{
+	display: flex;
+	justify-content: space-between;
+}
+
+.headerBottom>h1>a{
+	margin: 18px 0 22px 15vw;
+	background-image: url(./img/hexschool-logo.png);
+	display: block;
+	width: 150.06px;
+	height: 36px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	
+}
+
+.headerBottom ul{
+	display: flex;
+	white-space: nowrap;
+	padding-top: 26px;
+	margin-right: 15vw;
+}
+
+.headerBottom nav a{
+	color:#00cc99;
+	text-decoration: none;
+	line-height: 1.5;
+	padding: 0 21px 24px 21px;
+}
+
+.headerBottom>nav a:hover{
+	border-bottom:4px solid  #00cc99;	
+}
+
+.section1{
+	background-image: url(./img/header_background.png);
+	background-size: cover;
+	background-position: center;
+	height: 390px;
+	display: flex;
+	align-items: center;
+}
+
+.section1 h2{
+	font-size: 36px;
+	line-height: 1.2;
+	background-color: #FFFFFF26;
+	width: 100%;
+	font-weight: 700;
+	padding: 27px 0 26px 25%;
+}
+
+.wrap{
+	width: 1100px;
+	margin: 60px auto 16px auto;
+}
+
+.content{
+	text-align: center;
+}
+
+.content>ul{
+	display: flex;
+	gap: 30px;
+}
+
+/* .content>ul>li{
+	padding: 20px;
+	box-shadow:0 2px 4px #00000029
+} */
+
+
+.content>ul>li{
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2),
+	-18px -18px 30px rgb(255, 255, 255,1);
+	transition: all 0.3s ease-out;
+}
+
+.content>ul>li:active{
+	cursor: pointer;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 2),
+	0 0 0 rgba(255, 255, 255, 0.8),
+	inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+	inset -18px -18px 30px rgba(255, 255, 255, 1);
+
+}
+
+
+
+
+/* .content>ul>li:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	box-shadow: 0 0 0;
+	border-right: 5px solid #00000029;
+	border-bottom: 5px solid #00000029;
+} */
+
+h4{
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight:700;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.content>ul>li>p{
+	line-height: 1.5;
+	text-align: left;
+}
+
+.content>ul>li:nth-child(2)>img{
+	margin-top: 5px;
+	margin-bottom: -10px;
+}
+.content>ul>li:nth-child(3)>img{
+	margin-top: 48px;
+	margin-bottom: 31px;
+}
+
+.content>ul>li:nth-child(3) li{
+list-style: disc;
+list-style-position: inside;
+text-align: left;
+}
+
+.table{
+	margin: 60px 95px;
+}
+
+.table h3{
+	font-size: 24px;
+	padding-bottom: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.table th,td{
+	text-align: left;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;;
+	padding: 6px 17px;
+	width: 267px;
+	line-height: 1.5;
+}
+
+.table th:first-child,td:first-child{
+	width: 156px;
+}
+
+.table th{
+font-weight: 700;
+background-color: #aaaaaa8e;
+}
+
+.table tr:hover{
+	background-color: #f3eeee7c;
+}
+
+
+.highLight{
+	color: #00CC99;
+	font-weight: 700;
+}
+
+.form{
+	background-image: -webkit-linear-gradient(#E4FFF8 0%, #A2DDCE 100%);
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+.form>h3{
+	text-align: center;
+	color: #00251a;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	padding-bottom: 28px;
+}
+.form form>div:first-child{
+	display: flex;
+	color: #00251a;
+	justify-content: center;
+	gap: 30px;
+}
+
+.form>form>div input, .form textarea{
+	border: 1px solid #aaaaaa;
+	border-radius: 3px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+
+.form>form>div input{
+	padding: 6px 10px;
+	width: 351px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* .form>form>div input:focus{
+	border: #00aaec;
+} */
+
+.form textarea{
+	width: 350px;
+	height: 200px;
+	padding: 0;
+}
+
+::placeholder{
+	color: #999999;
+	font-size: 16px;
+}
+
+.formButton{
+	display: block;
+	background-color: #00251a;
+	color: #ffffff;
+	line-height: 1.2;
+	width: 159px; 
+	height: 38px;
+	margin: 16px auto 0 auto;
+	border: 1px solid #00251a;
+	border-radius: 3px;
+}
+
+.formButton:hover{
+	background-color: #00251ac9;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer>a{
+	margin-top: 22px;
+	margin-bottom: 6px;
+}
+
+.footer>a:hover{
+	box-shadow:0 0 5px #999999;
+}
+
+.footer>div{
+	line-height: 1.5;
+	padding-top: 16px;
+}
+
+.footer>div a{
+	color: #00cc99;
+	text-decoration: none;
+}
+
+.footer>div p:hover{
+	font-weight: 700;
+}
